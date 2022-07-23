@@ -39,7 +39,7 @@ resource "aws_security_group" "hashicat" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = [var.subnet_prefix]
+    cidr_blocks = ["10.132.0.180/32"]
   }
 
   ingress {
